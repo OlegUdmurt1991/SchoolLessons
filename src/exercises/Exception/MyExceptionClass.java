@@ -6,7 +6,14 @@ import java.util.Scanner;
     {
         public String toString()
         {
-            return "Хватит";
+
+            return "Хватитююю";
+        }
+
+
+        public int length() {
+            return 7;
+
         }
     }
 
