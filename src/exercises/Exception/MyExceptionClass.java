@@ -4,17 +4,7 @@ import java.util.Scanner;
 
     class MyExceptionClass extends Exception
     {
-        public String toString()
-        {
 
-            return "Хватитююю";
-        }
-
-
-        public int length() {
-            return 7;
-
-        }
     }
 
 
@@ -22,62 +12,18 @@ import java.util.Scanner;
 
 
 
-
-
-
-
-//    public static String getWord(String word){
-//       String result = null;
-//        try{
-//            if(word.equals(result)) throw new Exception("The number is less than 1");
+//        public String toString()
+//        {
 //
-//            for(int i=1; i!=;i++){
-//
-//                result*=i;
-//            }
+//            return "Хватитююю";
 //        }
-//        catch(Exception ex){
 //
-//            System.out.println(ex.getMessage());
-//            result=num;
+//
+//        public int length() {
+//            return 7;
+//
 //        }
-//        return result;
-//    }
 
 
-
-
-
-
-
-
-
-//    public static void main(String[] args) throws Exception {
-////        String[] arryName = new String[5];
-//        Scanner in = new Scanner(System.in);
-//        System.out.println("Введите слово: ");
-//
-////for (int j = 0; j<in.length; j++) {
-//    if (in.equals("Хватит")) throw new Exception("сработало исключение");{
-//
-//        System.out.println("Test1: One and Two are equal");
-//    } else {
-//        System.out.println("Test1: One and Two are not equal");
-//    }
-//}
-//
-//    }
-//
-//}
-
-
-//        if (in.equals("Хватит")) throw new Exception("сработало исключение");
-//
-//
-//    }
-//
-//                System.out.println();
-//
-//            }
 
 
