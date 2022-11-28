@@ -6,16 +6,28 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
-        System.out.println("Напишите предложение");
-        String sentence = in.nextLine();
+
+        String sentence;
+
+            do {
+                System.out.println("Напиши предложение");
+                sentence = in.nextLine();
+                int len = sentence.length();
+                try {
+                    if (len > 7) {
+                        throw new Exception("Сработало исключение!!!!!!!");
+                    }
+                } catch (Exception ex) {
+                    ex.getMessage();
+                    System.out.println("Слово не должно быть больше 7 букв");
+                }}
+                while (!sentence.equals("хватит")) ;
+                System.out.println("Поздравляю! Ты угадал слово");
+
+            }}
 
 
-        do {
-            System.out.println("Напиши снова предложение");
-            sentence = in.nextLine();
-        }
-        while (!sentence.equals("хватит"));
-        System.out.println("Поздравляю! Ты угадал слово");
+
 
 
 
@@ -33,8 +45,7 @@ public class Main {
 //        }
 
 
-    }
-}
+
 
 
 
