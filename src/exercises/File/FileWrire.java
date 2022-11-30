@@ -11,10 +11,27 @@ public class FileWrire {
             PrintWriter file = new PrintWriter(new BufferedWriter(new FileWriter(myFail, true)));        // —оздаем файл
             file.println("hi, brodyaga");                  //«аписываем в документ текст
             file.println("hello worl");
-            Files.copy(myFail.toPath(), output.toPath()); //создаем второй файл, копиру€ его из первого
             file.close();                                    //»спользуем метод close дл€ закрыти€ потока
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            BufferedReader myFailReader = new BufferedReader(new FileReader(myFail));        // —оздаем буфер дл€ чтени€ myFile
+            PrintWriter outputWriter = new PrintWriter(new BufferedWriter(new FileWriter(output, true)));
+            String line = myFailReader.readLine();
+            while (line != null) {
+                outputWriter.println(line.toUpperCase());
+                line = myFailReader.readLine();
+            }
+            myFailReader.close();                                    //»спользуем метод close дл€ закрыти€ потока
+            outputWriter.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 }
+
+
+
+//
+//Files.copy(myFail.toPath(), output.toPath()); //создаем второй файл, копиру€ его из первого
